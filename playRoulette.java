@@ -1,6 +1,8 @@
-/* Roulette that simulates the gambling game.The player begins with $10 and bets (up to) $3 per spin of the wheel. 
-If the wheel comes up 1-18, the player wins $3. Otherwise, player loses $3.
-Play until the player gets $1000 or drops to $0. At the end, print the max money the player ever earned.*/
+/* Method accepts two parameters: an integer for the dollars the player starts with; and another integer for 
+the dollars the player will bet each round.
+
+The player bets that the ball will land on any even number. If the ball lands on an even number,
+the player wins; and if the ball lands on any odd number or 0, the player loses. */
 
     public void playRoulette(int start, int bet) {
         printf("start with $%d, betting up to $%d\n", start, bet);
