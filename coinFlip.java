@@ -1,3 +1,11 @@
+/* IMPORTANT! 
+If I use else if(side == 'T') statement instead of else statement code will not 
+compile and i get an error variable sd, otherSide might not have been initialized.
+Fix would be to (1) use if else on all the branches, and (2) make the last one an else without another if,
+ i.e. else { ... instead of else if (num > 4) { ...  Or best just write int sd = (side == 'T') ? 1 : 0;
+
+*/
+
 private void coinFlip(int flips, char side){
     if(flips < 0 || (side != 'T' && side != 'H')){
         println("ERROR!");
