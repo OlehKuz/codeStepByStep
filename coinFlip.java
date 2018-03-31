@@ -11,7 +11,7 @@ private void coinFlip(int flips, char side){
         println("ERROR!");
         return;
     }
-    int counter = 0;
+    /*int counter = 0;    // better solution is w ternary operator 
     int sd;
     char otherSide; 
     if(side == 'T'){
@@ -21,7 +21,12 @@ private void coinFlip(int flips, char side){
     else {
         sd = 0;
         otherSide = 'T';
-    }
+    }*/
+ 
+    int counter = 0;
+    int sd = (side == 'T') ? 1 : 0;
+    char otherSide = (side == 'T') ? 'H' : 'T';
+ 
     while(counter != flips){
         int flip = RandomGenerator.getInstance().nextInt(0, 1);
         if(sd == flip){
