@@ -1,2 +1,2 @@
 # codeStepByStep
-personal solutions to problems on CodeStepByStep in java 
+personal solutions to problems, CodeStepByStep, java 
