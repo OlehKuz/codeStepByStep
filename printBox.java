@@ -25,6 +25,12 @@ printBox("poem.txt", 7);
 #All m#
 #Are b#
 #######
+
+ If any lines in the file are too long to fit into the box, truncate them.
+You may assume that the input file exists and is readable, and that its lines can fit within the given width. 
+You may assume that the width value passed will be at least 2. 
+Notice that the file might contain blank lines. Your solution should read the file only once, 
+not make multiple passes over the file data.
 */
 
 
