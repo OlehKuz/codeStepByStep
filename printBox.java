@@ -41,6 +41,11 @@ private void printBox (String name, int width) {
             String line = line1.toLowerCase();
             int len = line.length();
             print("#");
+            
+            /* If string is shorter than a width - two #, then we need to add " " spaces to make a box.
+                Also be careful not to access outOfBounds index, if string is shorter than width - 2: access
+                only substring up to String`s length */
+            
             if(len < width - 2) {
                 for(int k = 0; k < len; k++){
                     if(k == 0){
@@ -55,7 +60,7 @@ private void printBox (String name, int width) {
                 }
                 println("#");
             }
-                
+                // If String is longer than width - 2, cut that string
             else {
                 for(int j = 0; j < width - 2; j++){
                     if (j == 0){
