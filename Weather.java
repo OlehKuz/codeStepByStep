@@ -20,6 +20,12 @@ public class Weather extends ConsoleProgram {
             String file = readLine("Input file? ");
             Scanner s = new Scanner (new File (file));
             double n1 = s.nextDouble();
+            /* in order to include all the doubles present in file, the condition must be 
+            while(s.hasNext()) and not s.hasNextDouble(). This is because some doubles may be 
+            separated by Strings or other chars, and we need to skip those chars != doubles, that is why
+            we check  inside of  while(s.hasNext()) loop if(s.hasNextDouble()) is true, otherwise we just read in another 
+            value s.next() and check if it is a double*/
+            
             while(s.hasNext()){
                 if(s.hasNextDouble()){      
                     double n2 = s.nextDouble();
