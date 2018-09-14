@@ -1,3 +1,34 @@
+/*
+printBox("poem.txt", 19);		
+###################
+#Roses are red    #
+#Violets are blue #
+#                 #
+#All my base      #
+#Are belong to you#
+###################
+
+printBox("poem.txt", 30);
+##############################
+#Roses are red               #
+#Violets are blue            #
+#                            #
+#All my base                 #
+#Are belong to you           #
+##############################
+
+printBox("poem.txt", 7);
+#######
+#Roses#
+#Viole#
+#     #
+#All m#
+#Are b#
+#######
+*/
+
+
+
 private void printBox (String name, int width) {
     try {
         Scanner scan = new Scanner(new File(name));
