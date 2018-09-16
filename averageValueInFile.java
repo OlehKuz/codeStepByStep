@@ -1,7 +1,7 @@
-/*  if i have a try / catch statement, i cant declare a variable I need to return in
-    try clause, because it fails w an error MissingReturnStatement
-
-*/
+/*  If i have a try / catch statement, i cant declare a variable I need to return in
+    try clause, because it fails w an error MissingReturnStatement.
+    I always need to return a method value outside of try / catch clauses, even if I 
+    already return sth inside of try / cause clauses */
 
 private double averageValueInFile (String file){
     int count = 0;
