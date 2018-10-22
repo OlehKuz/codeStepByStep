@@ -19,7 +19,7 @@ public int[] nCopies(int[] array){
                     for(int k = startIndex; k < startIndex + array[i]; k++){
                         newArray[k] = array[i];
                     }
-                    // remembers at which index starts empty array
+                    // remembers at which index starts empty array. Add array[i], because we added this many new values to the array
                     startIndex = startIndex + array[i]; 
                 }
             }
