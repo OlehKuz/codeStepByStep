@@ -14,9 +14,6 @@ public class UniqueNames extends ConsoleProgram {
     }
 
     public void addToList(String input){
-        if(list.size() == 0) {
-    		list.add(input);
-    	}
           for(int i = 0; i < list.size(); i++){
                 if(list.get(i).equals(input)){
                     // i need to return , not to break; if i break, it will add input to a list.
