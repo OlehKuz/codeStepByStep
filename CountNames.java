@@ -1,4 +1,7 @@
 public class CountNames extends ConsoleProgram {
+    /*
+     If a map calls put() on a key that already exists, it retains its current position in the ordering (Default). 
+    */
     public void run(){
         ReadInNames();
     }
