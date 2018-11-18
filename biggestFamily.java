@@ -52,10 +52,11 @@ public void printFamilies(String frequentFamilies, HashMap <String, String> name
     }
 }
 
-
+//still have to implement sorting individual tokens of a string in alphabetical order
  /*public String alphabeticOrder(String names){
         
     }*/
+
 // finds the most frequent surname(s)
 public String findfrequent(HashMap <String, Integer> map){
     String frequent = "";
