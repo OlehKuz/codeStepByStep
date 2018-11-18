@@ -8,6 +8,10 @@
 public void biggestFamily(String file){
     HashMap <String, String> namesFamily = new HashMap <String, String>();
     HashMap <String, Integer> frequentFamily = new HashMap <String, Integer>();
+  
+  /* adds all names from file that have the same surname to one family key in namesFamily hashMap
+      counts the frequency of each surname among people passed in a file
+  */
     try{
         Scanner input = new Scanner(new File(file));
         while(input.hasNextLine()){
@@ -37,6 +41,7 @@ public void biggestFamily(String file){
    
 }
 
+//prints members of biggest family(ies)
 public void printFamilies(String frequentFamilies, HashMap <String, String> namesFamily){
     StringTokenizer tokens = new StringTokenizer(frequentFamilies);
     while(tokens.hasMoreTokens()){
@@ -51,7 +56,7 @@ public void printFamilies(String frequentFamilies, HashMap <String, String> name
  /*public String alphabeticOrder(String names){
         
     }*/
-
+// finds the most frequent surname(s)
 public String findfrequent(HashMap <String, Integer> map){
     String frequent = "";
     Integer max = 0;
