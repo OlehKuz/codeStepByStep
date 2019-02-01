@@ -1,2 +1,2 @@
 # codeStepByStep
-personal solutions to problems, Code Step By Step, java, c++. Organised into branches according to topics 
+Code Step By Step  c++. Organised into branches according to topics 
